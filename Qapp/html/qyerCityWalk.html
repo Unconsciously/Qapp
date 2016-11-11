@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CityWalk</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/qyerPulice.css" />
+	    <link rel="stylesheet" type="text/css" href="../css/queryIndexHeader.css" />
+	    <link rel="stylesheet" type="text/css" href="../css/qyerCityWalk.css" />
+		<link rel="stylesheet" type="text/css" href="../css/queryIndexConcent.css" />
+
+		<script src="../js/jquery-1.8.3.min.js"></script>
+		<script src="../js/queryPulice.js"></script>
+		<script src="../js/ajaxFnAndSuccessFn.js"></script>
+        <script src="../js/queryCityWalk.js"></script>
+        
+	</head>
+	<body>
+		<!--公共顶部-->
+	    <div id="qyerPuliceT">
+	        <!--广告条top-->
+	        <div id="ad-bgT">
+	            <a href="#" id="ad-bg"></a>
+	            <a href="#" id="ad-close"></a>
+	        </div>
+	        <!--广告条top--end-->
+	        <!--导航栏top-->
+	        <div id="navHeaderT">
+	        	        	
+	            <div id="left-pic"></div>
+	            <div id="nav">
+	                <ul class="nav-ul">
+	                    <li class="nav-li"><a href="#" class="nav-a" title="穷游目的地">目的地</a></li>
+	                    <li class="nav-li"><a href="#" class="nav-a" title="穷游锦囊">锦囊</a></li>
+	                    <li class="nav-li"><a href="#" class="nav-a" title="穷游行程助手">行程助手</a></li>
+	                    <li class="nav-li"><a href="#" class="nav-a a-list" title="穷游社区">社区<b>﹀</b></a>                        </li>
+	                    <li class="nav-li"><a href="#" class="nav-a green-a" title="最世界•自由行">最世界•自由行</a></li>
+	                    <li class="nav-li"><a href="#" class="nav-a" title="穷游机票">机票</a></li>
+	                    <li class="nav-li"><a href="#" class="nav-a" title="穷游酒店">酒店</a></li>
+	                    <li class="nav-li"><a href="#" class="nav-a a-list" title="穷游预订">预订<b>﹀</b></a></li>
+	                </ul>
+	            </div>
+	            <div id="searchBlock">
+	            	<input class="txt-search" type="text" name="txt" value="" />
+	            	<input class="bth-search" type="button">
+	            </div>
+	            <div id="rightPic">
+	            					
+					<a href="#" class="rightPic-a1 nav-a"></a>
+					<a href="#" class="rightPic-a2 nav-a"></a>
+					<a href="#" class="rightPic-a3 nav-a"></a>
+					
+					<span class="rightPic-a4">
+						<a href="#" class="rightPic-reg nav-a">注册</a>
+						<a href="#" class="rightPic-log nav-a">登录</a>
+					</span>
+	            </div>
+	            
+	            <!--导航栏topw---end-->
+	            
+	            <!--导航栏-社区-->
+	            
+	            <div class="a-divCom">
+	                <span class="tag"></span>
+	                <ul>
+	                    <li class="a-li">
+	                        <a href="#" title="穷游论坛" class="a1Com">穷游论坛 ＞</a>                                                                      
+	                    </li>
+	                    <li class="a-li">
+	                        <a href="#" title="穷游论坛" title="穷游问答" class="a2Com">穷游问答</a>                                  
+								
+	                    </li>
+	                    <li class="a-li">
+	                        <a href="#" title=" JNE旅行生活美学" class="a3Com"> JNE旅行生活美学</a>
+	                    </li>
+	
+	                </ul>
+	
+	            </div>
+	            <!--导航栏-社区-穷游论坛-->
+		            
+		        <div class="a-li-block">
+		        		<div class="a-li-block-header"><span>热门版块</span><a href="#" class="dth-right">全部版块></a></div>
+		        		
+						<dl>
+							<dt>兴趣小组</dt>
+							<dd><a href="#">结伴同游</a> <a href="#">签证</a> <a href="#">旅行摄影</a> <a href="#">旅行购物</a></dd>
+						</dl>
+						
+						<dl>
+							<dt>穷游欧洲</dt>
+							<dd><a href="#">法国/摩纳哥</a> <a href="#">德国</a> <a href="#">英国/爱尔兰</a> <a href="#">瑞士/列支敦士登</a> <a href="#">土耳其</a> <a href="#">挪威/瑞典/芬兰/丹麦/冰岛 </a> <a href="#">意大利/梵蒂冈/圣马力诺/马耳他</a></dd>
+						</dl>
+						
+						<dl>
+							<dt>穷游亚洲</dt>
+							<dd><a href="#">台湾</a> <a href="#">日本</a> <a href="#">泰国</a> <a href="#">新加坡</a> <a href="#">斯里兰卡</a> <a href="#">韩国/朝鲜</a> <a href="#">香港/澳门</a><a href="#">来西亚/文莱</a> <a href="#">柬埔寨</a> <a href="#">马尔代夫</a><a href="#">缅甸</a> <a href="#">伊朗</a> <a href="#">印度/孟加拉</a></dd>
+						</dl>
+						
+						<dl>
+							<dt>穷游美洲</dt>
+							<dd><a href="#">加拿大</a> <a href="#">美国</a> <a href="#">中美</a> <a href="#">南美/南极</a></dd>
+						</dl>
+						
+						<dl>
+							<dt>穷游大洋洲</dt>
+							<dd><a href="#">澳大利亚</a> <a href="#">新西兰</a> <a href="#">太平洋海岛</a></dd>
+						</dl>
+						
+						<dl>
+							<dt>穷游非洲</dt>
+							<dd><a href="#">东非地区</a> <a href="#">非洲海岛</a> <a href="#">北非地区</a> <a href="#">非洲其他国家</a></dd>
+						</dl>
+		        	</div>
+					
+				<!--导航栏-预订-->	        	            
+		        <div class="a-divOrder">
+	                <span class="tag"></span>
+	                <ul>
+	                    <li class="a-li">
+	                        <a href="#" title="特价酒店" class="a1Order">特价酒店</a>
+	                    </li>
+	                    <li class="a-li">
+	                        <a href="#" title="保险" class="a2Order">保险</a>
+	                    </li>
+	                    <li class="a-li">
+	                        <a href="#" title="华人旅馆" class="a3Order">华人旅馆</a>
+	                    </li>
+	                    <li class="a-li">
+	                        <a href="#" title="游轮" class="a4Order"> 游轮</a>
+	                    </li>
+	                    <li class="a-li">
+	                        <a href="#" title="租车" class="a5Order"> 租车</a>
+	                    </li>
+	
+	                </ul>
+	
+	            </div>
+	            
+	            
+		    </div>
+		        	       
+		    <!--导航栏top---end-->
+		        		         		       
+	    </div>
+	    
+	    <!--首页头部	-->
+	    <div id="CityWalk-header-bg">
+	    	<div id="CityWalk-header-wrap">
+	    		<div class="iheader">
+	    			<div class="index-header-logo">
+	    			<img src="../images/foot-logo.png" />
+		    		</div>
+			    	<div class="index-header-search">
+			    		<a href="#" class="search-inner-submit"></a>
+		    			<input type="text" name="keyword" placeholder="搜索国家、城市、产品" class="header-search-text" />
+
+			    	</div>
+			    	<div class="myorder-coll">
+			    		<a href="#"class="myorder-a">
+			    			<p class="myorder-icon"></p>
+			    			<span class="myorder">我的订购</span>
+			    		</a>
+			    		<a href="#" class="mycoll-a">
+			    			<p class="mycoll-icon"></p>
+			    			<span class="mycoll">我的收藏</span>
+			    		</a>
+			    	</div>
+			    	
+			    	<div class="clear"></div>
+	    		</div>
+
+				<!--搜索框block-->
+				<div class="search-hblock">
+					<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+					<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+					<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+					<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+					<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+					<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+
+				</div>
+		    	<!--首页导航-->
+		    	
+		    	<div id="CityWalk-nav">
+					<ul class="CityWalk-nav-wrap">
+						<li class="CityWalk-nav-item-one">热门目的地<b>﹀</b></li>
+						<li class="CityWalk-nav-item"><a href="#">首页</a></li>
+						<li class="CityWalk-nav-item"><a href="#">机酒自由行</a></li>
+						<li class="CityWalk-nav-item index-nav-item licity"><a href="#">城市玩乐<em class="index-nav-item-tag"><span></span><img src="../images/wanletag.gif" /></em></a></li>
+						<li class="CityWalk-nav-item"><a href="#">签证</a></li>
+						<li class="CityWalk-nav-item"><a href="#">租车</a></li>
+						<li class="CityWalk-nav-item"><a href="#">邮轮</a></li>
+						<li class="CityWalk-nav-item"><a href="#">海岛游</a></li>
+						<li class="CityWalk-nav-item"><a href="#">限时特卖</a></li>
+						<li class="CityWalk-nav-item"><a href="#">特色线路</a></li>
+						<li class="CityWalk-nav-item CityWalk-nav-item-last"><a href="#">CityWalk</a></li>
+
+					</ul>
+				</div>
+				
+				<!--热门导航-->
+
+		    	<div class="CityWalk-centent-list">
+					<span class="tag"></span>
+
+		    		<ul>
+
+		    			<li class="index-centent-list-item">
+		    				<p class="index-centent-list-icon"></p>
+		    				<h2 class="index-centent-list-title">港 澳 台 </h2>
+		    				<p class="index-centent-list-p">香港 澳门 台湾 三亚 长白山</p>
+		    				<p class="index-centent-list-arrow">〉</p>
+		    			</li>
+		    			<li class="index-centent-list-item">
+		    				<p class="index-centent-list-icon"></p>
+		    				<h2 class="index-centent-list-title">日本 韩国</h2>
+		    				<p class="index-centent-list-p">东京 大阪 冲绳 首尔 济州岛</p>
+		    				<p class="index-centent-list-arrow">〉</p>
+		    			</li>
+		    			<li class="index-centent-list-item">
+		    				<p class="index-centent-list-icon"></p>
+		    				<h2 class="index-centent-list-title">东南亚 南亚</h2>
+		    				<p class="index-centent-list-p">普吉 清迈 沙巴 巴厘岛 马尔代夫</p>
+		    				<p class="index-centent-list-arrow">〉</p>
+		    			</li>
+		    			<li class="index-centent-list-item">
+		    				<p class="index-centent-list-icon"></p>
+		    				<h2 class="index-centent-list-title">欧洲 美洲</h2>
+		    				<p class="index-centent-list-p">法国 意大利 美国 英国</p>
+		    				<p class="index-centent-list-arrow">〉</p>
+		    			</li>
+		    			<li class="index-centent-list-item">
+		    				<p class="index-centent-list-icon"></p>
+		    				<h2 class="index-centent-list-title">澳新 中东非</h2>
+		    				<p class="index-centent-list-p">悉尼 新西兰 迪拜 帕劳</p>
+		    				<p class="index-centent-list-arrow">〉</p>
+		    			</li>
+		    			<li class="index-centent-list-item">
+		    				<p class="index-centent-list-icon"></p>
+		    				<h2 class="index-centent-list-title">主题推荐</h2>
+		    				<p class="index-centent-list-p">邮轮 亲子 情侣 海岛游 购物</p>
+		    				<p class="index-centent-list-arrow">〉</p>
+		    			</li>
+		    			<li class="index-centent-list-item">
+		    				<p class="index-centent-list-icon"></p>
+		    				<h2 class="index-centent-list-title">出行必备</h2>
+		    				<p class="index-centent-list-p">Wi-Fi 电话卡 接送机 保险</p>
+		    				<p class="index-centent-list-arrow">〉</p>
+		    			</li>
+		    		</ul>
+		    		
+		    		   		
+		    	</div>
+		    	
+
+		    	<!--citywalk热门导航中的block-->
+				<div class="CityWalk-centent-list-blocks">
+				<!--	
+					<div class="list-block-content">												
+						<div class="block-content-wrap">
+							<div class="blockplace">
+								<h2 class="bigtitle">香港 澳门1</h2>
+								<ul class="placelist">
+									<li class="placelistli"><a href="#">11111111</a></li>
+									<li class="placelistli"><a href="#">11111111</a></li>
+									<li class="placelistli"><a href="#">11111111</a></li>
+								</ul>
+							</div>
+
+							<div class="blockplace">
+								<h2 class="bigtitle">台湾 澳门11</h2>
+								<ul class="placelist">
+									<li class="placelistli"><a href="#">11111111</a></li>
+									<li class="placelistli"><a href="#">11111111</a></li>
+								</ul>
+							</div>
+						</div>
+					
+						<div class="block-content-wrap">
+							<div class="blockplace">
+								<h2 class="bigtitle">国内1</h2>
+								<ul class="placelist">
+									<li class="placelistli"><a href="#">2222222222</a></li>
+									<li class="placelistli"><a href="#">222222222</a></li>
+								</ul>
+							</div>
+							
+							<p class="blockpic">
+								<a href="#"><img src="" width="100%"></a>
+							</p>
+						</div>						
+					</div>
+					-->
+				</div>
+	    		    		    	
+	    	</div>
+		</div>    
+	    
+		<!--首页banner-->
+	    
+		<div class="citywalk-banner">
+			<div class="cwbanner"></div>
+		</div>
+		
+		<!--筛选城市-->
+		
+		<div class="selectcities">
+			<div class="selectcities-wrap">
+				<div class="cities-title">所在城市</div>
+				<div class="citieslist">
+					<a href="javascript:void(0)" class="cities-all">全部</a>
+				</div>
+				<div class="cities-wrap">
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">北京</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">佛罗伦萨</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">北京</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">佛罗伦萨</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">佛罗伦萨</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">北京</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">佛罗伦萨</a>
+					<a href="#" class="cities-link">上海</a>
+					<a href="#" class="cities-link">上海</a>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--综合排序 列表-->
+		
+		<div class="sortnav">
+			<ul class="sortnav-wrap">
+				<li class="sort-default"><a href="javascript:void(0)">综合排序</a></li>
+				<li class="sort-sales"><a href="javascript:void(0)">销量<b>↓</b></a></li>
+				<li class="sort-sales"><a href="javascript:void(0)">
+					<input type="checkbox" name="sort-today-new" id="sort-today-new" class="sort-today-new" value=""/>
+					<label class="cus-checkbox" for="sort-today-new"></label>
+					<span class="today-new-text">今日新品</span>
+				</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		
+		<!--根据所选的排序列表显示的列表内容---获取数据-->
+		
+		<div class="productlist">
+			<div class="productlist-wrap">
+				<!--
+				
+				<div class="pro-item">
+					<a href="#"><img class="pro-itemimg" src="../images/pro1.jpg"> </a>
+					<div class="pro-iteminfo">
+						<span class="pro-iteminfo-place">京都</span>
+						<div class="pro-iteminfo-num">
+							<span >46657</span>次浏览
+							<span>237</span>件已售
+						</div>
+						<h2><a href="#" title="【最世界一日游】将军之道—京都绝景之旅（含米其林午餐）仅限10周岁以上参加" target="_blank">【最世界一日游】将军之道—京都绝景之旅（含米其林午餐）仅限10周岁以上参加</a></h2>
+						
+						<ul class="pro-iteminfo-list">
+							<li>
+								<p></p>听惊心动魄的日本战国故事
+							</li>
+							<li>
+								<p></p>品米其林餐厅会席料理
+							</li>
+							<li>
+								<p></p>从东山最佳角度俯瞰京都
+							</li>
+						</ul>
+						<div class="pro-iteminfo-price">
+							<span class="lined">1650元</span>
+							<b>868</b>元起
+						</div>
+						<div class="pro-iteminfo-order"><a class="pro-iteminfo-btn" href="#" target="_blank">立即订阅</a></div>
+					</div>
+				</div>
+				
+				
+				-->
+												
+			</div>
+			
+			<div class="page-wrap">
+				<div class="page-all">
+					<a href="#" class="page-item page-curr">1</a>
+					<a href="#" class="page-item">2</a>
+					<a href="#" class="page-item page-next">下一页</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+
+        <!--右侧浮动-->
+        <div id="sidefloat-right">
+            <a href="#" class="sidefloat-right-cell1">
+                <span class="fixr-myorder"></span>
+                <span class="fontorder">我的订单</span>
+            </a>
+            <a href="#" class="sidefloat-right-cell2">
+                <span class="fixr-mycoll"></span>
+                <span class="fontcoll">我的收藏</span>
+            </a>
+            <div id="go-top" class="sidefloat-right-cell3"></div>
+        </div>
+
+        <!--底部-固定登录小广告---->
+        <div class="fix-bottomad">
+            <div class="fix-adconcent">
+                <div class="leftad-login">
+                    <a href="javascript:void(0);" class="weibo-login"></a>
+                    <a href="javascript:void(0);" class="qq-login"></a>
+                    <span class="qyerts"><a href="javascript:void(0);">登录</a>或</span>
+                    <a href="javascript:void(0);" class="qyer-login"></a>
+                </div>
+
+            </div>
+            <div class="rightad-closebtn"></div>
+        </div>
+		
+		
+		<!--公共底部-->
+	 <div id="qyerPuliceB">
+	    	<div class="qyerPuliceBprev">
+	    		<ul class="qyer-footernav">
+	    			<li><a href="#">机酒自由行</a></li>
+	    			<li><a href="#">城市玩乐</a></li>
+	    			<li><a href="#">签证</a></li>
+	    			<li><a href="#">租车</a></li>
+	    			<li><a href="#">邮轮</a></li>
+	    			<li><a href="#">海南岛</a></li>
+	    			<li><a href="#">限时特卖</a></li>
+	    			<li><a href="#">特色路线</a></li>
+	    			<li><a href="#">CityWalk</a></li>
+	    		</ul>
+	    		<ul class="qyerfootad">
+	    			<li>
+	    				<p class="iconlist icon1"></p>
+	    				<h3 class="titlelist">专业保证</h3>
+	    				<p class="textlist">我们收集穷游er的真实诉求，也找寻全世界最独特的旅行目的地，让更多的穷游er轻松出行</p>
+	    			</li>
+	    			<li>
+	    				<p class="iconlist icon2"></p>
+	    				<h3 class="titlelist">多重审核</h3>
+	    				<p class="textlist">对旅游产品供应商严格筛选，资质认证层层把关，为穷游er精挑细选最值得信赖的旅行产品</p>
+	    			</li>
+	    			<li>
+	    				<p class="iconlist icon3"></p>
+	    				<h3 class="titlelist">安心陪护</h3>
+	    				<p class="textlist">对所有穷游er的购买进行跟踪服务以及质量监控，有效投诉先行赔付，出现任何问题负责到底</p>
+	    			</li>
+	    		</ul>
+	    	</div>
+	  </div>
+
+	    	<div class="footerpublic">
+	    		<div class="footerwrap">
+	    			<div class="footert">
+	    				<div class="footertleft">
+	    					<p class="footertleft-logo"><img src="../images/foot-logo.png"></p>
+	    					<p class="footertleft-text">
+	    						最世界·自由行——从一张机票、一家酒店的订购，到一次暖心的接机服务、一张轻松融入当地的交通卡，让我们带你探索这个世界
+	    					</p>
+	    				</div>
+	    				<dl class="footertright">
+	    					<dt>关于我们</dt>
+	    					<dd class="f-iphone">
+	    						<p class="zeroicons"></p>
+	    						<div class="box"></div>
+	    					</dd>
+	    					<dd class="f-wechat">
+	    						<p class="zeroicons"></p>
+	    						<div class="box"></div>
+	    					</dd>
+	    					<dd class="f-weibo">
+	    						<p class="zeroicons"></p>
+	    						<div class="box"></div>
+	    					</dd>
+	    					<dd class="f-mail">
+	    						<p class="zeroicons"></p>
+	    						<div class="box"></div>
+	    					</dd>
+	    				</dl>
+	    			</div>
+
+	    			<div class="footerb">
+	    				<div class="footerb-link">
+	    					<ul>
+	    						<li><a href="#">关于最世界自由行</a></li>
+				    			<li><a href="#">服务与隐私</a></li>
+				    			<li><a href="#">联系我们</a></li>
+				    			<li><a href="#">旅游度假资质</a></li>
+				    			<li><a href="#">营业执照</a></li>
+				    			<li><a href="#">投诉建议</a></li>
+
+	    					</ul>
+	    				</div>
+	    				<div class="footerb-listlinks">
+	    					2004-2016 © 穷游网™ qyer.com All rights reserved. Version v5.57  京ICP备12003524号  京公网安备11010502023470  京ICP证140673号
+	    				</div>
+	    				<p class="footerb-frilinks">
+	    					友情链接：<a href="#">美国旅游</a><a href="#">房屋租赁</a><a href="#">旅游工具</a><a href="#">美规车网</a>
+	    				</p>
+	    			</div>
+	    		</div>
+	    	</div>
+
+
+
+
+	
+	</body>
+</html>

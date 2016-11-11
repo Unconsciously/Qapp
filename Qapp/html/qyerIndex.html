@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qyerIndex</title>
+    <link rel="stylesheet" type="text/css" href="../css/qyerPulice.css" />
+    <link rel="stylesheet" type="text/css" href="../css/queryIndexHeader.css" />
+    <link rel="stylesheet" type="text/css" href="../css/queryIndexConcent.css" />
+
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/queryPulice.js"></script>
+	<script src="../js/ajaxFnAndSuccessFn.js"></script>
+	<script src="../js/queryIndex.js"></script>
+</head>
+<body>
+	<!--公共顶部-->
+    <div id="qyerPuliceT">
+        <!--广告条top-->
+        <div id="ad-bgT">
+            <a href="#" id="ad-bg"></a>
+            <a href="#" id="ad-close"></a>
+        </div>
+        <!--广告条top--end-->
+        <!--导航栏top-->
+        <div id="navHeaderT">
+        	        	
+            <div id="left-pic"></div>
+            <div id="nav">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="#" class="nav-a" title="穷游目的地">目的地</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a" title="穷游锦囊">锦囊</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a" title="穷游行程助手">行程助手</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a a-list" title="穷游社区">社区<b>﹀</b></a>                        </li>
+                    <li class="nav-li"><a href="#" class="nav-a green-a" title="最世界•自由行">最世界•自由行</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a" title="穷游机票">机票</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a" title="穷游酒店">酒店</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a a-list" title="穷游预订">预订<b>﹀</b></a></li>
+                </ul>
+            </div>
+            <div id="searchBlock">
+            	<input class="txt-search" type="text" name="txt" value="" />
+            	<input class="bth-search" type="button">
+            </div>
+            <div id="rightPic">
+            					
+				<a href="#" class="rightPic-a1 nav-a"></a>
+				<a href="#" class="rightPic-a2 nav-a"></a>
+				<a href="#" class="rightPic-a3 nav-a"></a>
+				
+				<span class="rightPic-a4">
+					<a href="#" class="rightPic-reg nav-a">注册</a>
+					<a href="#" class="rightPic-log nav-a">登录</a>
+				</span>
+            </div>
+
+
+
+            <!--导航栏topw---end-->
+
+            <!--导航栏-社区-->
+            
+            <div class="a-divCom">
+                <span class="tag"></span>
+                <ul>
+                    <li class="a-li">
+                        <a href="#" title="穷游论坛" class="a1Com">穷游论坛 ＞</a>                                                                      
+                    </li>
+                    <li class="a-li">
+                        <a href="#" title="穷游论坛" title="穷游问答" class="a2Com">穷游问答</a>                                  
+							
+                    </li>
+                    <li class="a-li">
+                        <a href="#" title=" JNE旅行生活美学" class="a3Com"> JNE旅行生活美学</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!--导航栏-社区-穷游论坛-->
+	            
+	        <div class="a-li-block">
+	        		<div class="a-li-block-header"><span>热门版块</span><a href="#" class="dth-right">全部版块></a></div>
+	        		
+					<dl>
+						<dt>兴趣小组</dt>
+						<dd><a href="#">结伴同游</a> <a href="#">签证</a> <a href="#">旅行摄影</a> <a href="#">旅行购物</a></dd>
+					</dl>
+					
+					<dl>
+						<dt>穷游欧洲</dt>
+						<dd><a href="#">法国/摩纳哥</a> <a href="#">德国</a> <a href="#">英国/爱尔兰</a> <a href="#">瑞士/列支敦士登</a> <a href="#">土耳其</a> <a href="#">挪威/瑞典/芬兰/丹麦/冰岛 </a> <a href="#">意大利/梵蒂冈/圣马力诺/马耳他</a></dd>
+					</dl>
+					
+					<dl>
+						<dt>穷游亚洲</dt>
+						<dd><a href="#">台湾</a> <a href="#">日本</a> <a href="#">泰国</a> <a href="#">新加坡</a> <a href="#">斯里兰卡</a> <a href="#">韩国/朝鲜</a> <a href="#">香港/澳门</a><a href="#">来西亚/文莱</a> <a href="#">柬埔寨</a> <a href="#">马尔代夫</a><a href="#">缅甸</a> <a href="#">伊朗</a> <a href="#">印度/孟加拉</a></dd>
+					</dl>
+					
+					<dl>
+						<dt>穷游美洲</dt>
+						<dd><a href="#">加拿大</a> <a href="#">美国</a> <a href="#">中美</a> <a href="#">南美/南极</a></dd>
+					</dl>
+					
+					<dl>
+						<dt>穷游大洋洲</dt>
+						<dd><a href="#">澳大利亚</a> <a href="#">新西兰</a> <a href="#">太平洋海岛</a></dd>
+					</dl>
+					
+					<dl>
+						<dt>穷游非洲</dt>
+						<dd><a href="#">东非地区</a> <a href="#">非洲海岛</a> <a href="#">北非地区</a> <a href="#">非洲其他国家</a></dd>
+					</dl>
+	        	</div>
+				
+			<!--导航栏-预订-->	        	            
+	        <div class="a-divOrder">
+                <span class="tag"></span>
+                <ul>
+                    <li class="a-li">
+                        <a href="#" title="特价酒店" class="a1Order">特价酒店</a>
+                    </li>
+                    <li class="a-li">
+                        <a href="#" title="保险" class="a2Order">保险</a>
+                    </li>
+                    <li class="a-li">
+                        <a href="#" title="华人旅馆" class="a3Order">华人旅馆</a>
+                    </li>
+                    <li class="a-li">
+                        <a href="#" title="游轮" class="a4Order"> 游轮</a>
+                    </li>
+                    <li class="a-li">
+                        <a href="#" title="租车" class="a5Order"> 租车</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            
+            
+	    </div>
+	        	       
+	    <!--导航栏top---end-->	        	       	       
+    </div>
+    
+    <!--首页头部	-->
+    <div id="index-header-bg">
+    	<div id="index-header-wrap">
+    		<div class="index-header-logo">
+    			<img src="../images/head-logo.png" />
+    		</div>
+	    	<div class="index-header-search">
+	    	
+	    			<input type="text" name="keyword" placeholder="搜索国家、城市、产品" class="header-search-text" />
+	    			<a href="#" class="header-search-submit"></a>	    	
+	    	</div>
+	    	<div class="index-header-app">
+	    		<a href="#">
+	    			<span class="app-icons"></span>
+	    			<span class="app-txt">APP</span>
+	    		</a>
+	    	</div>
+    	</div>
+    </div>
+
+	<!--搜索框block-->
+	<div class="search-hblock">
+		<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+		<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+		<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+		<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+		<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+		<p class="search-hblock-item"><span class="hot-searchetext">日本</span><input class="hot-searche" type="button" name="hot-searche" value="热门搜索"></p>
+
+	</div>
+
+    <!--首页导航-->
+	<div id="index-header-nav">
+		<ul class="index-nav-wrap">
+			<li class="index-nav-item"><a href="#">首页</a></li>
+			<li class="index-nav-item"><a href="#">机酒自由行</a></li>
+			<li class="index-nav-item"><a href="#">城市玩乐<em class="index-nav-item-tag"><span></span><img src="../images/wanletag.gif" /></em></a></li>
+			<li class="index-nav-item"><a href="#">签证</a></li>
+			<li class="index-nav-item"><a href="#">租车</a></li>
+			<li class="index-nav-item"><a href="#">邮轮</a></li>
+			<li class="index-nav-item"><a href="#">海岛游</a></li>
+			<li class="index-nav-item"><a href="#">限时特卖</a></li>
+			<li class="index-nav-item"><a href="#">特色线路</a></li>
+			<li class="index-nav-item"><a href="#">CityWalk</a></li>
+		</ul>
+	</div>
+    
+    <!--首页轮播-->
+    <div id="index-centent-nav">
+    	
+    	<!--轮播图-->
+    	<div class="index-centent-turn">
+
+			<div class="index-centent-turn-item">
+				<!--				
+				<a href="#"><img src="../images/turn1.png"></a>				
+				-->
+			</div>
+
+    	</div>
+
+		<div class="index-centent-turn-btn">
+			<p class="index-centent-turn-left"><img src="../images/Arrow_Right.png" /></p>
+			<p class="index-centent-turn-right"><img src="../images/Arrow_Right.png" /></p>
+			<ol class="index-centent-turn-dots">
+				<!--
+				<li class="dot"></li>
+				-->
+			</ol>
+		</div>
+    	
+    	<!--热门导航-->
+        <div class="index-centent-list">
+            <ul>
+                <li class="index-centent-list-item">
+                    <p class="index-centent-list-icon"></p>
+                    <h2 class="index-centent-list-title">港 澳 台 </h2>
+                    <p class="index-centent-list-p">香港 澳门 台湾 三亚 长白山</p>
+                    <p class="index-centent-list-arrow">〉</p>
+                </li>
+                <li class="index-centent-list-item">
+                    <p class="index-centent-list-icon"></p>
+                    <h2 class="index-centent-list-title">日本 韩国</h2>
+                    <p class="index-centent-list-p">东京 大阪 冲绳 首尔 济州岛</p>
+                    <p class="index-centent-list-arrow">〉</p>
+                </li>
+                <li class="index-centent-list-item">
+                    <p class="index-centent-list-icon"></p>
+                    <h2 class="index-centent-list-title">东南亚 南亚</h2>
+                    <p class="index-centent-list-p">普吉 清迈 沙巴 巴厘岛 马尔代夫</p>
+                    <p class="index-centent-list-arrow">〉</p>
+                </li>
+                <li class="index-centent-list-item">
+                    <p class="index-centent-list-icon"></p>
+                    <h2 class="index-centent-list-title">欧洲 美洲</h2>
+                    <p class="index-centent-list-p">法国 意大利 美国 英国</p>
+                    <p class="index-centent-list-arrow">〉</p>
+                </li>
+                <li class="index-centent-list-item">
+                    <p class="index-centent-list-icon"></p>
+                    <h2 class="index-centent-list-title">澳新 中东非</h2>
+                    <p class="index-centent-list-p">悉尼 新西兰 迪拜 帕劳</p>
+                    <p class="index-centent-list-arrow">〉</p>
+                </li>
+                <li class="index-centent-list-item">
+                    <p class="index-centent-list-icon"></p>
+                    <h2 class="index-centent-list-title">主题推荐</h2>
+                    <p class="index-centent-list-p">邮轮 亲子 情侣 海岛游 购物</p>
+                    <p class="index-centent-list-arrow">〉</p>
+                </li>
+                <li class="index-centent-list-item">
+                    <p class="index-centent-list-icon"></p>
+                    <h2 class="index-centent-list-title">出行必备</h2>
+                    <p class="index-centent-list-p">Wi-Fi 电话卡 接送机 保险</p>
+                    <p class="index-centent-list-arrow">〉</p>
+                </li>
+            </ul>
+
+
+        </div>
+
+    	<!--首页热门导航中的block-->
+
+    	<div class="index-centent-list-blocks"></div>
+      
+    </div>
+    
+    
+    <!--广告栏-->
+    <div id="index-adshow">
+    	<ul>
+    		<li><a href="#"><img src="../images/zy.jpg" alt="自营会场"/></a></li>
+    		<li><a href="#"><img src="../images/wl.jpg" alt="自营会场"/></a></li>
+    		<li><a href="#"><img src="../images/hd.jpg" alt="自营会场"/></a></li>
+    		<li><a href="#"><img src="../images/qz.jpg" alt="自营会场"/></a></li>
+    	</ul>
+    </div>
+    
+    
+    <!--限时特卖--saletitle共用-->
+    <div class="flashsale1">
+    	<div class="flashsale-wrap">
+    		<div class="saletitle">
+    			<h2 class="saleheader">限时特卖</h2>
+    			<span class="saleheader-subtitle">每日必看的特价精选</span>
+    			<p class="saleheader-select"><span class="content-refresh"></span>换一换</p>
+    		</div>
+    		
+    		<div class="salecontent">
+    			<!--动态获取数据【模板如下】-->
+    			<ul class="flashsale-list">
+    				<li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/120.jpg" />
+    						</p>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+    					</a>
+    				</li>
+    			</ul>
+    			<ul class="flashsale-list">
+    				<li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/120.jpg" />
+    						</p>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+    					</a>
+    				</li>
+    			</ul>
+    			<ul class="flashsale-list">
+    				<li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/120.jpg" />
+    						</p>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+    					</a>
+    				</li>
+    			</ul>
+    			<div class="clear"></div>
+    		</div>
+    	</div>
+    </div>
+     
+    <!--机酒自由行-->
+    <div class="freewalker2">
+    	<div class="flashsale-wrap">
+    		<div class="saletitle">
+    			<h2 class="saleheader">机酒自由行</h2>
+    			<p class="saleheader-subtitle">每日必看的特价精选</p>
+    			<p class="saleheader-select">   				
+    				<!--<a>今日热卖</a><a>今日新品</a><a>闪购</a><a>假期出行</a><a>超值机票</a><a>热门海岛</a><a>热门推荐</a>
+    				-->
+    			</p>
+    		</div>
+    		
+    		<div class="salecontent">    							
+				<!--
+				<ul class="walkersale-list walkersale-list-one">
+				<ul class="walkersale-list">
+					--更多选择-
+					<li class="walkersale-list-li-one">
+        			<li class="walkersale-list-li">        				
+        				<a href="#">
+				            <p class="picswalker">
+				                <img src="../images/w1.jpg" />
+				            </p>
+				
+				            <div class="pricewalker">
+				                <span class="priceused">机+酒</span>
+				                <span class="minprice2"><b>1999</b>元起</span>
+				            </div>
+				            <div class="titles">
+				                <h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+				                <p class="time">旅行时间 2016/01-2017/07</p>
+				            </div>
+				        </a>
+				        
+					<li class="walkersale-list-li-more">
+						<div class="more-title">
+							<a href="#">
+								<p class="moretitle">
+									查看更多
+									<br>
+									机酒自由行产品
+								</p>
+								<p class="morearrow"></p>
+							</a>
+						</div>
+						<p class="morelist">
+							<a href="#">机票</a>
+							<a href="#">酒店</a>
+							<a href="#">机+酒</a>
+							<a href="#">邮轮</a>
+						</p>
+
+					</li>
+				</ul>
+				<div class="clear"></div>-->
+    		</div>
+    	</div>
+    </div>
+    
+    <!--城市玩乐-->
+    <div class="flashsale3">
+    	<div class="flashsale-wrap">
+    		<div class="saletitle">
+    			<h2 class="saleheader">城市玩乐</h2>
+    			<span class="saleheader-subtitle">像当地人一样，体验最本土的吃喝玩乐</span>
+    			<p class="saleheader-select"><a>日本</a><a>泰国</a><a>港澳台</a><a>新西兰</a><a>澳大利亚</a><a>美国</a><a>WIFI/电话卡</a></p>
+    		</div>
+    		
+    		<div class="salecontent">
+    			<!--动态获取数据【模板如下】-->
+				<!--------------------------------1-->
+    			<ul class="citysale-list walkersale-list-one">
+    				<li class="citysale-list-li-one">
+    					<a href="#">
+    						<p class="picscity">
+    							<img src="../images/cswl.jpg" />
+    						</p>
+    					   						
+    						<div class="citysale">
+    							<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+    							<span class="cityused">城市玩乐</span>
+    							<span class="minprice1"><b>7</b>元起</span>
+    						</div>
+    						
+    					</a>
+    				</li>
+    			
+    				<li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/cswl2.jpg" />
+    						</p>
+    						<h3 class="title">【奇妙体验】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>458</b>元起</span></div>
+    					</a>
+    				</li>
+    			
+    				<li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/120.jpg" />
+    						</p>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+    					</a>
+    				</li>
+    				<li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/120.jpg" />
+    						</p>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+    					</a>
+    				</li>
+    				
+    				<!--城市玩乐more活动-->
+    				<li class="citysale-list-li-more">
+    					
+    					<div class="more-title">
+    						<a href="#">
+    							<p class="moretitle">
+    								查看更多
+    								<br>
+    								城市玩乐产品
+    							</p>
+    							<p class="morearrow"></p>
+    						</a>
+    					</div>
+    					<p class="morelist">
+    						<a href="#">WIFI/电话卡</a>
+    						<a href="#">交通票劵</a>
+    						<a href="#">景点门票</a>
+    						<a href="#">特色体验</a>
+    					</p>
+    					
+    				</li>
+    				
+    				<li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/120.jpg" />
+    						</p>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+    					</a>
+    				</li><li class="flashsale-list-li">
+    					<a href="#">
+    						<p class="picssale">
+    							<img src="../images/120.jpg" />
+    						</p>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+    						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+    					</a>
+    				</li>
+    				
+    			</ul>
+
+
+				<!------------------------------2-->
+				<ul class="citysale-list">
+					<li class="citysale-list-li-one">
+						<a href="#">
+							<p class="picscity">
+								<img src="../images/cswl.jpg" />
+							</p>
+
+							<div class="citysale">
+								<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+								<span class="cityused">城市玩乐</span>
+								<span class="minprice1"><b>7</b>元起</span>
+							</div>
+
+						</a>
+					</li>
+
+					<li class="flashsale-list-li">
+						<a href="#">
+							<p class="picssale">
+								<img src="../images/cswl2.jpg" />
+							</p>
+							<h3 class="title">【奇妙体验】香港/澳门往返帕劳...</h3>
+							<div class="pricesale"><span class="minprice1"><b>458</b>元起</span></div>
+						</a>
+					</li>
+					<li class="flashsale-list-li">
+						<a href="#">
+							<p class="picssale">
+								<img src="../images/120.jpg" />
+							</p>
+							<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+							<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+						</a>
+					</li><li class="flashsale-list-li">
+					<a href="#">
+						<p class="picssale">
+							<img src="../images/120.jpg" />
+						</p>
+						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+					</a>
+				</li>
+
+				</ul>
+
+				<!--------------------3-->
+				<ul class="citysale-list">
+					<li class="citysale-list-li-one">
+						<a href="#">
+							<p class="picscity">
+								<img src="../images/cswl.jpg" />
+							</p>
+
+							<div class="citysale">
+								<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+								<span class="cityused">城市玩乐</span>
+								<span class="minprice1"><b>7</b>元起</span>
+							</div>
+
+						</a>
+					</li>
+
+					<li class="flashsale-list-li">
+						<a href="#">
+							<p class="picssale">
+								<img src="../images/120.jpg" />
+							</p>
+							<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+							<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+						</a>
+					</li><li class="flashsale-list-li">
+					<a href="#">
+						<p class="picssale">
+							<img src="../images/120.jpg" />
+						</p>
+						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+					</a>
+				</li>
+
+				</ul>
+				<!-----------------------------4-->
+
+				<ul class="citysale-list">
+					<li class="citysale-list-li-one">
+						<a href="#">
+							<p class="picscity">
+								<img src="../images/cswl.jpg" />
+							</p>
+
+							<div class="citysale">
+								<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+								<span class="cityused">城市玩乐</span>
+								<span class="minprice1"><b>7</b>元起</span>
+							</div>
+
+						</a>
+					</li>
+					<li class="flashsale-list-li">
+						<a href="#">
+							<p class="picssale">
+								<img src="../images/120.jpg" />
+							</p>
+							<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+							<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+						</a>
+					</li>
+
+				</ul>
+				<!---------------5-->
+
+				<ul class="citysale-list">
+					<li class="citysale-list-li-one">
+						<a href="#">
+							<p class="picscity">
+								<img src="../images/cswl.jpg" />
+							</p>
+
+							<div class="citysale">
+								<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+								<span class="cityused">城市玩乐</span>
+								<span class="minprice1"><b>7</b>元起</span>
+							</div>
+
+						</a>
+					</li>
+					<li class="flashsale-list-li">
+					<a href="#">
+						<p class="picssale">
+							<img src="../images/120.jpg" />
+						</p>
+						<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+						<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+					</a>
+				</li>
+
+				</ul>
+
+				<!-----------------6-->
+
+				<ul class="citysale-list">
+					<li class="flashsale-list-li">
+						<a href="#">
+							<p class="picssale">
+								<img src="../images/120.jpg" />
+							</p>
+							<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+							<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+						</a>
+					</li>
+
+				</ul>
+
+				<!---------------7-->
+				<ul class="citysale-list">
+					<li class="citysale-list-li-one">
+						<a href="#">
+							<p class="picscity">
+								<img src="../images/cswl.jpg" />
+							</p>
+
+							<div class="citysale">
+								<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+								<span class="cityused">城市玩乐</span>
+								<span class="minprice1"><b>7</b>元起</span>
+							</div>
+
+						</a>
+					</li>
+					<li class="flashsale-list-li">
+						<a href="#">
+							<p class="picssale">
+								<img src="../images/120.jpg" />
+							</p>
+							<h3 class="title">【大促特惠/圣诞/元旦/春节】香港/澳门往返帕劳...</h3>
+							<div class="pricesale"><span class="minprice1"><b>1999</b>元起</span></div>
+						</a>
+					</li>
+
+				</ul>
+				<div class="clear"></div>
+    		</div>
+    	</div>
+    </div>
+
+    <!--主题推荐 == 机电自由行-->
+    <div class="freewalker4">
+    	<div class="flashsale-wrap">
+    		<div class="saletitle">
+    			<h2 class="saleheader">主题推荐</h2>
+    			<p class="saleheader-subtitle">亲子、蜜月、个性玩法…你想要的这里都有</p>
+    			<p class="saleheader-select"><a>精品小团</a><a>发现城市</a><a>亲子家庭</a><a>情侣蜜月</a><a>血拼购物</a><a>闺蜜同游</a><a>冒险之旅</a></p>
+    		</div>
+    		<div class="salecontent salecontent-one">
+    			<!--动态获取数据【模板如下】-->
+				<!---------------------1精品小团---------------->
+    			<ul class="walkersale-list walkersale-list-one">
+    				<li class="itemesale-list-li-one">
+    					<a href="#">
+    						<p class="picsiteme">
+    							<img src="../images/zt.jpg" />
+    						</p>
+    						<div class="itemetag"><span>精品小团</span></div>
+    						<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+    						<span class="minprice1"><b>1999</b>元起</span>
+    						
+    					</a>
+    				</li>
+    				
+    				<li class="walkersale-list-li">
+    					<a href="#">
+    						<p class="picswalker">
+    							<img src="../images/w2.jpg" />
+    						</p>    						    					
+							<div class="priceiteme">
+								<h3 class="title">香港/澳门往返帕劳...</h3>
+								<span class="minprice1"><b>1999</b>元起</span>
+							</div>    						
+    					</a>
+    				</li>
+    				<li class="walkersale-list-li">
+    					<a href="#">
+    						<p class="picswalker">
+    							<img src="../images/w2.jpg" />
+    						</p>    						    					
+							<div class="priceiteme">
+								<h3 class="title">香港/澳门往返帕劳...</h3>
+								<span class="minprice1"><b>1999</b>元起</span>
+							</div>    						
+    					</a>
+    				</li>
+    				<li class="walkersale-list-li">
+    					<a href="#">
+    						<p class="picswalker">
+    							<img src="../images/w2.jpg" />
+    						</p>    						    					
+							<div class="priceiteme">
+								<h3 class="title">香港/澳门往返帕劳...</h3>
+								<span class="minprice1"><b>1999</b>元起</span>
+							</div>    						
+    					</a>
+    				</li>
+    				<li class="walkersale-list-li">
+    					<a href="#">
+    						<p class="picswalker">
+    							<img src="../images/w2.jpg" />
+    						</p>    						    					
+							<div class="priceiteme">
+								<h3 class="title">香港/澳门往返帕劳...</h3>
+								<span class="minprice1"><b>1999</b>元起</span>
+							</div>    						
+    					</a>
+    				</li>
+    				<li class="walkersale-list-li">
+    					<a href="#">
+    						<p class="picswalker">
+    							<img src="../images/w2.jpg" />
+    						</p>    						    					
+							<div class="priceiteme">
+								<h3 class="title">香港/澳门往返帕劳...</h3>
+								<span class="minprice1"><b>1999</b>元起</span>
+							</div>    						
+    					</a>
+    				</li>
+    				
+    				
+    				<!--更多选择-->
+    				<li class="itemesale-list-li-more">
+    					
+    					<div class="more-title">
+    						<a href="#">
+    							<p class="moretitle">
+    								查看更多
+    								<br>
+    								主题推荐产品
+    							</p>
+    							<p class="morearrow"></p>
+    						</a>
+    					</div>
+    					<p class="morelist">
+    						<a href="#">亲子</a>
+    						<a href="#">情侣</a>
+    						<a href="#">海岛游</a>
+    						<a href="#">购物</a>
+    					</p>
+    					
+    				</li>
+    			</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="salecontent">
+			<!-------------------2发现城市----------------------->
+				<ul class="walkersale-list">
+					<li class="itemesale-list-li-one">
+						<a href="#">
+							<p class="picsiteme">
+								<img src="../images/zt.jpg" />
+							</p>
+							<div class="itemetag"><span>精品小团</span></div>
+							<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+							<span class="minprice1"><b>1999</b>元起</span>
+
+						</a>
+					</li>
+
+					<li class="walkersale-list-li">
+						<a href="#">
+							<p class="picswalker">
+								<img src="../images/w2.jpg" />
+							</p>
+							<div class="priceiteme">
+								<h3 class="title">香港/澳门往返帕劳...</h3>
+								<span class="minprice1"><b>1999</b>元起</span>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+				<div class="clear"></div>
+			<!----------------3-->
+			</div>
+			<div class="salecontent">
+				<ul class="walkersale-list">
+					<li class="itemesale-list-li-one">
+						<a href="#">
+							<p class="picsiteme">
+								<img src="../images/zt.jpg" />
+							</p>
+							<div class="itemetag"><span>精品小团</span></div>
+							<h3 class="title">【大促特惠/圣诞/元旦/春节】...</h3>
+							<span class="minprice1"><b>1999</b>元起</span>
+
+						</a>
+					</li>
+
+					<li class="walkersale-list-li">
+						<a href="#">
+							<p class="picswalker">
+								<img src="../images/w2.jpg" />
+							</p>
+							<div class="priceiteme">
+								<h3 class="title">香港/澳门往返帕劳...</h3>
+								<span class="minprice1"><b>1999</b>元起</span>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+
+				<!--------------------------4-->
+
+				<!--更多选择-->
+
+				<ul class="walkersale-list">
+					<li class="itemesale-list-li-more">
+
+					<div class="more-title">
+						<a href="#">
+							<p class="moretitle">
+								查看更多
+								<br>
+								主题推荐产品
+							</p>
+							<p class="morearrow"></p>
+						</a>
+					</div>
+					<p class="morelist">
+						<a href="#">亲子</a>
+						<a href="#">情侣</a>
+						<a href="#">海岛游</a>
+						<a href="#">购物</a>
+					</p>
+
+				</li>
+
+
+			<!-----------------------5-->
+                </ul>
+                <ul class="walkersale-list">
+
+					<li class="itemesale-list-li-more">
+
+						<div class="more-title">
+							<a href="#">
+								<p class="moretitle">
+									查看更多
+									<br>
+									主题推荐产品
+								</p>
+								<p class="morearrow"></p>
+							</a>
+						</div>
+						<p class="morelist">
+							<a href="#">亲子</a>
+							<a href="#">情侣</a>
+							<a href="#">海岛游</a>
+							<a href="#">购物</a>
+						</p>
+
+					</li>
+
+			<!-----------------------6-->
+                </ul>
+                <ul class="walkersale-list">
+					<li class="itemesale-list-li-more">
+
+						<div class="more-title">
+							<a href="#">
+								<p class="moretitle">
+									查看更多
+									<br>
+									主题推荐产品
+								</p>
+								<p class="morearrow"></p>
+							</a>
+						</div>
+						<p class="morelist">
+							<a href="#">亲子</a>
+							<a href="#">情侣</a>
+							<a href="#">海岛游</a>
+							<a href="#">购物</a>
+						</p>
+
+					</li>
+                    <!-----------------------7-->
+                </ul>
+                <ul class="walkersale-list">
+					<li class="itemesale-list-li-more">
+
+						<div class="more-title">
+							<a href="#">
+								<p class="moretitle">
+									查看更多
+									<br>
+									主题推荐产品
+								</p>
+								<p class="morearrow"></p>
+							</a>
+						</div>
+						<p class="morelist">
+							<a href="#">亲子</a>
+							<a href="#">情侣</a>
+							<a href="#">海岛游</a>
+							<a href="#">购物</a>
+						</p>
+
+					</li>
+				</ul>
+
+				<div class="clear"></div>
+			</div>
+    	</div>
+    </div>
+
+    <!--右侧浮动-->
+   	<div id="sidefloat-right">
+   		<a href="#" class="sidefloat-right-cell1">
+   			<span class="fixr-myorder"></span>
+   			<span class="fontorder">我的订单</span>
+   		</a>
+   		<a href="#" class="sidefloat-right-cell2">
+   			<span class="fixr-mycoll"></span>
+   			<span class="fontcoll">我的收藏</span>
+   		</a>
+   		<div id="go-top" class="sidefloat-right-cell3"></div>
+   	</div>  
+    
+    <!--底部-固定登录小广告---->
+	<div class="fix-bottomad">
+		<div class="fix-adconcent">
+			<div class="leftad-login">
+				<a href="javascript:void(0);" class="weibo-login"></a>
+				<a href="javascript:void(0);" class="qq-login"></a>
+				<span class="qyerts"><a href="javascript:void(0);">登录</a>或</span>
+				<a href="javascript:void(0);" class="qyer-login"></a>
+			</div>
+			
+		</div>
+		<div class="rightad-closebtn"></div>
+	</div>
+
+    
+    <!--公共底部-->
+    <div id="qyerPuliceB">
+    	<div class="qyerPuliceBprev">
+    		<ul class="qyer-footernav">
+    			<li><a href="#">机酒自由行</a></li>
+    			<li><a href="#">城市玩乐</a></li>
+    			<li><a href="#">签证</a></li>
+    			<li><a href="#">租车</a></li>
+    			<li><a href="#">邮轮</a></li>
+    			<li><a href="#">海南岛</a></li>
+    			<li><a href="#">限时特卖</a></li>
+    			<li><a href="#">特色路线</a></li>
+    			<li><a href="#">CityWalk</a></li>
+    		</ul>
+    		<ul class="qyerfootad">
+    			<li> 
+    				<p class="iconlist icon1"></p>
+    				<h3 class="titlelist">专业保证</h3>
+    				<p class="textlist">我们收集穷游er的真实诉求，也找寻全世界最独特的旅行目的地，让更多的穷游er轻松出行</p>
+    			</li>
+    			<li> 
+    				<p class="iconlist icon2"></p>
+    				<h3 class="titlelist">多重审核</h3>
+    				<p class="textlist">对旅游产品供应商严格筛选，资质认证层层把关，为穷游er精挑细选最值得信赖的旅行产品</p>
+    			</li>
+    			<li> 
+    				<p class="iconlist icon3"></p>
+    				<h3 class="titlelist">安心陪护</h3>
+    				<p class="textlist">对所有穷游er的购买进行跟踪服务以及质量监控，有效投诉先行赔付，出现任何问题负责到底</p>
+    			</li>
+    		</ul>
+    	</div>
+    
+    
+    	<div class="footerpublic">
+    		<div class="footerwrap">
+    			<div class="footert">
+    				<div class="footertleft">
+    					<p class="footertleft-logo"><img src="../images/foot-logo.png"></p>
+    					<p class="footertleft-text">
+    						最世界·自由行——从一张机票、一家酒店的订购，到一次暖心的接机服务、一张轻松融入当地的交通卡，让我们带你探索这个世界
+    					</p>
+    				</div>
+    				<dl class="footertright">
+    					<dt>关于我们</dt>
+    					<dd class="f-iphone">
+    						<p class="zeroicons"></p>
+    						<div class="box"></div>
+    					</dd>
+    					<dd class="f-wechat">
+    						<p class="zeroicons"></p>
+    						<div class="box"></div>
+    					</dd>
+    					<dd class="f-weibo">
+    						<p class="zeroicons"></p>
+    						<div class="box"></div>
+    					</dd>
+    					<dd class="f-mail">
+    						<p class="zeroicons"></p>
+    						<div class="box"></div>
+    					</dd>
+    				</dl>
+    			</div>
+    			
+    			<div class="footerb">
+    				<div class="footerb-link">
+    					<ul>
+    						<li><a href="#">关于最世界自由行</a></li>
+			    			<li><a href="#">服务与隐私</a></li>
+			    			<li><a href="#">联系我们</a></li>
+			    			<li><a href="#">旅游度假资质</a></li>
+			    			<li><a href="#">营业执照</a></li>
+			    			<li><a href="#">投诉建议</a></li>
+
+    					</ul>
+    				</div>
+    				<div class="footerb-listlinks">
+    					2004-2016 © 穷游网™ qyer.com All rights reserved. Version v5.57  京ICP备12003524号  京公网安备11010502023470  京ICP证140673号
+    				</div>
+    				<p class="footerb-frilinks">
+    					友情链接：<a href="#">美国旅游</a><a href="#">房屋租赁</a><a href="#">旅游工具</a><a href="#">美规车网</a>
+    				</p>
+    			</div>
+    		</div>
+    	</div>
+    
+    
+    </div>
+
+
+
+
+</body>
+</html>
